@@ -1,0 +1,27 @@
+{
+  "expo": {
+    "name": "Lux Bike",
+    "slug": "lux-bike",
+    "version": "2.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "lu.example.luxbike",
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "Serve per partire dalla tua posizione e registrare i giri."
+      }
+    },
+    "android": {
+      "package": "lu.example.luxbike",
+      "permissions": ["ACCESS_FINE_LOCATION", "ACCESS_COARSE_LOCATION"]
+    },
+    "plugins": [
+      ["expo-location", { "locationWhenInUsePermission": "Serve per partire dalla tua posizione e registrare i giri." }],
+      ["react-native-health", {
+        "healthSharePermission": "Lux Bike legge i tuoi allenamenti da Salute.",
+        "healthUpdatePermission": "Lux Bike salva i tuoi giri in bici in Salute."
+      }]
+    ]
+  }
+}
